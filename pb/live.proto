@@ -1,0 +1,18 @@
+
+syntax = "proto3";
+
+option go_package = "./pb";
+
+package pb;
+
+service StreamingService {
+  rpc GetLiveStream(stream StreamingRequest) returns (stream StreamingResponse);
+}
+
+message StreamingRequest {
+  string data = 1;
+}
+
+message StreamingResponse {
+  bytes data = 1;
+}
