@@ -6,7 +6,7 @@ import (
 	"net"
 
 	pb "live/pb"
-	"live/service"
+	service "live/pkg"
 
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"
