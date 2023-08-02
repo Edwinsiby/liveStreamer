@@ -13,7 +13,6 @@ import (
 )
 
 func main() {
-
 	myService := &service.Server{}
 	lis, err := net.Listen("tcp", ":8081")
 	if err != nil {
